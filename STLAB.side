@@ -1,0 +1,68 @@
+{
+  "id": "4069ee75-0a8e-4db8-9172-04b43c332d2a",
+  "version": "2.0",
+  "name": "STLAB",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "ea34dd7b-35c2-4640-8efa-fc3a6c3b411a",
+    "name": "Untitled",
+    "commands": [{
+      "id": "e379f325-1d76-49f0-a352-8410bae84d5d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41c365bf-62e3-4d92-8fa2-00edf24d824e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1080x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94ac7c6f-4db1-46a6-8b38-92dd680013b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d068a06-07c5-47c9-bd88-1efaa0a90532",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [],
+      "value": "doremon"
+    }, {
+      "id": "e6e72341-d683-4a54-a78d-f7a44cd74e75",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=APjFqb",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e47d832c-e8dc-43a7-bcac-3b414fca322e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h3[contains(.,'Doraemon')]",
+      "targets": [
+        ["css=.g:nth-child(4) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/span/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Doraemon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f0c52d1b-fc50-4e17-a9f6-0875b2fe21fd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea34dd7b-35c2-4640-8efa-fc3a6c3b411a"]
+  }],
+  "urls": ["https://google.com/", "https://www.google.com/"],
+  "plugins": []
+}
